@@ -14,16 +14,16 @@ Open **two terminals** in your project folder:
 
 ### Terminal 1 — Backend (Flask)
 
-cd onboarding-app
-source .venv/bin/activate
-python backend/app.py
-
-cd onboarding-app/frontend
-npm run dev
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 app.py
 
 ### Terminal 2 — Fronkend (REACT+vite)
 
-cd onboarding-app/frontend
+cd frontend
+npm install
 npm run dev
 
 
